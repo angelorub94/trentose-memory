@@ -12,7 +12,7 @@ var templ = '<li id="val-1" class="done"> <h3>val</h3></li>';
     </li> */
 var a;
 var counter = 0;
-
+                        
 $(document).ready(function(){
    for(var i=0; i<10; i++){
        a = templ.replace("val-1", data[i]);
@@ -23,15 +23,19 @@ $(document).ready(function(){
     $(".opt-start").click(function(){
         $(".done").addClass("hidden");
         $(".hidden").removeClass("done"); 
-        
+
         //ora inserisco il controllo sulle immagini cliccate
-        $("#1").click(function(){
+         $("#1").click(function(){
             if(counter === 0){
                 $("#1").addClass("done");
                 $("#1").removeClass("hidden");  
                 counter++;
             }  else {
                 alert("You Lost");
+                $(".hidden").hide();
+                $(".done").hide();
+                $(".opt-start").hide();
+                $(".cards").append("<center>Premi F5 per giocare di nuovo</center>");
             }
         });
         
@@ -42,6 +46,10 @@ $(document).ready(function(){
                 counter++;
             }  else {
                 alert("You Lost");
+                $(".hidden").hide();
+                $(".done").hide();
+                $(".opt-start").hide();
+                $(".cards").append("<center>Premi F5 per giocare di nuovo</center>");
             }
         });
         
@@ -52,6 +60,10 @@ $(document).ready(function(){
                 counter++;
             }  else {
                 alert("You Lost");
+                $(".hidden").hide();
+                $(".done").hide();
+                $(".opt-start").hide();
+                $(".cards").append("<center>Premi F5 per giocare di nuovo</center>");
             }
         });
         
@@ -62,6 +74,10 @@ $(document).ready(function(){
                 counter++;
             }  else {
                 alert("You Lost");
+                $(".hidden").hide();
+                $(".done").hide();
+                $(".opt-start").hide();
+                $(".cards").append("<center>Premi F5 per giocare di nuovo</center>");
             }
         });
         
@@ -72,6 +88,10 @@ $(document).ready(function(){
                 counter++;
             }  else {
                 alert("You Lost");
+                $(".hidden").hide();
+                $(".done").hide();
+                $(".opt-start").hide();
+                $(".cards").append("<center>Premi F5 per giocare di nuovo</center>");
             }
         });
         
@@ -82,6 +102,10 @@ $(document).ready(function(){
                 counter++;
             }  else {
                 alert("You Lost");
+                $(".hidden").hide();
+                $(".done").hide();
+                $(".opt-start").hide();
+                $(".cards").append("<center>Premi F5 per giocare di nuovo</center>");
             }
         });
         
@@ -92,6 +116,10 @@ $(document).ready(function(){
                 counter++;
             }  else {
                 alert("You Lost");
+                $(".hidden").hide();
+                $(".done").hide();
+                $(".opt-start").hide();
+                $(".cards").append("<center>Premi F5 per giocare di nuovo</center>");
             }
         });
         
@@ -102,6 +130,10 @@ $(document).ready(function(){
                 counter++;
             }  else {
                 alert("You Lost");
+                $(".hidden").hide();
+                $(".done").hide();
+                $(".opt-start").hide();
+                $(".cards").append("<center>Premi F5 per giocare di nuovo</center>");
             }
         });
         
@@ -112,6 +144,10 @@ $(document).ready(function(){
                 counter++;
             }  else {
                 alert("You Lost");
+                $(".hidden").hide();
+                $(".done").hide();
+                $(".opt-start").hide();
+                $(".cards").append("<center>Premi F5 per giocare di nuovo</center>");
             }
         });
             
@@ -123,6 +159,10 @@ $(document).ready(function(){
                 alert("You Won");
             }  else {
                 alert("You Lost");
+                $(".hidden").hide();
+                $(".done").hide();
+                $(".opt-start").hide();
+                $(".cards").append("<center>Premi F5 per giocare di nuovo</center>");
             }
         });
     });
